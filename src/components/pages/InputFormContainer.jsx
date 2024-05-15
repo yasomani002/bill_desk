@@ -3,15 +3,10 @@ import CustomTextFiled from '../common/CustomTextFiled'
 
 function InputFormContainer({
     formData,
-    companyName,
     handleOnChange,
-    customerName,
     selectedItem,
-    selectedItemPrice,
-    quantity,
     tax
 }) {
-    console.log(formData, 'formData')
     return (
         <div className='inputFormContainer__root'>
             <form>

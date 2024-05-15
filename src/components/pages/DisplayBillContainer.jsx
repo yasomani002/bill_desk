@@ -7,8 +7,7 @@ function DisplayBillContainer({
     tax
 }) {
     const price = selectedItem.price * formData.quantity 
-    const total = price*tax?.value / 100 + price
-    console.log(formData , 'formData')
+    const total = price*tax?.value / 100 + price || 0
     return (
         <div className='displayBillContainer__root'>
             <Typo variant='ka01'>Company Name : {formData?.companyName}</Typo>
@@ -23,7 +22,7 @@ function DisplayBillContainer({
             <br />
             <Typo variant='ka01'>Tax : {tax?.value}%</Typo>
             <br />
-            <Typo variant='ka01'>Price : {total}</Typo>
+            <Typo variant='ka01'>Price : ₹{total}</Typo>
        
         </div>
     )
