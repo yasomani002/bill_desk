@@ -1,0 +1,21 @@
+.rootContainer__root{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+}
+
+.inputFormContainer__root{
+    border: 1px solid #000000;
+    min-height: 98vh;
+    padding: 1rem;
+}
+
+.displayBillContainer__root{
+    border: 1px solid #000000;
+    min-height: 98vh;
+    padding: 1rem;
+}
+.inputFormContainer__price__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
